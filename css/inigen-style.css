@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Courier New";
+    color: #db8792;
+}
+
+/*CSS document*/
+
+/*Insert global rules here - rules that apply for all pages on your site and all device sizes. This could be text color, font type, font-sizes, margin on elements */
+
+/*COMMENTS WITH CAPITAL LETTERS ARE EASY TO SPOT, SO USE THEM FOR HEADINGS FOR OVERVIEW. IT IS A GOOD IDEA TO HAVE A HEADING FOR YOUR HEADER, NAVIGATION, MAIN AND FOOTER. SEE EXAMPLE BELOW*/
+
+
+/*HEADER*/
+
+/* example where you target the h1 inside the header tag and give it a color and a size */
+/*header h1{
+color: #ffffff;  
+font-size: 48px;
+}*/
+
+header {
+    background-color: #ffbf49;
+    background-image: linear-gradient(#ffbf49, #fdf9ee);
+    width: 100%;
+    margin: 0%;
+}
+
+/*.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around; 
+}*/
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: right;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-right: 1.5px solid #fff;
+}
+
+/*Alt som KUN er til større skærme*/
+@media (min-width:960px) {
+    li a {
+        text-decoration: none;
+        font-size: 130%;
+    }
+}
+
+/*Alt som KUN er til mindre skærme*/
+@media (max-width:960px) {
+    li a {
+        text-decoration: none;
+        font-size: 100%;
+    }
+}
+
+li img {
+    width: 100%;
+    padding-right: 10%
+}
+
+header {
+    margin: 0;
+    padding-left: 0;
+    font-size: 100%;
+    /*display: flex;
+    justify-content: space-around, flex-end;*/
+}
+
+img {
+    width: 100%
+}
+
+
+body {
+    background-color: #fdf9ee
+}
+
+.flexforsideartikler {
+    padding: 2%;
+    border-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#skjortekjole {
+    position: relative;
+    width: 35%;
+}
+
+@media (min-width:960px) {
+    #skjortekjole section {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+
+        top: 38%;
+        color: #7aa3bd;
+        font-size: 150%;
+        background-color: #c5d6e2;
+        padding: 1%
+    }
+
+    #skjortekjole section h1 {
+        font-size: 100%;
+        color: #7aa3bd;
+        position: absolute;
+        text-align: center;
+        padding: 5%
+    }
+
+    #skjortekjole section h2 {
+        font-size: 60%;
+        color: #7aa3bd;
+        position: absolute;
+        padding-top: 20%;
+    }
+}
+
+@media (max-width:960px) {
+    #skjortekjole section {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+        top: 38%;
+        color: #7aa3bd;
+        font-size: 100%;
+        background-color: #c5d6e2;
+        padding: 1%
+    }
+
+    #skjortekjole section h1 {
+        font-size: 100%;
+        color: #7aa3bd;
+        text-align: center;
+        padding: 5%
+    }
+
+    #skjortekjole section h2 {
+        font-size: 60%;
+        color: #7aa3bd;
+    }
+
+    #treforsidebilleder {
+        width: 100%;
+    }
+}
+
+#treforsidebilleder {
+    width: 63%;
+}
+
+#toejpaaboejle {
+    position: relative;
+}
+
+#toejpaaboejle h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    color: #7aa3bd;
+    font-size: 180%;
+    background-color: #c5d6e2;
+    padding: 1%
+}
+
+#getthelook {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: center
+}
+
+/*#getthelook h1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #7aa3bd;
+    font-size: 180%;
+    background-color: #c5d6e2;
+    margin-top: 2%
+}*/
+
+#getthelook img {
+    width: 48%;
+    padding-top: 2%;
+}
+
+/*Forside slut, 'Hvad og Hvem' starter*/
+
+.Rakel {
+    padding: 2%;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Rakel h1 {
+    font-size: 150%;
+    color: #7aa3bd;
+}
+
+.Rakel h2 {
+    font-size: 100%;
+    color: #7aa3bd;
+}
+
+.Rakel section {
+    color: #7aa3bd;
+    position: relative;
+}
+
+.Rakel section #skammel {
+    position: relative;
+    width: 40%;
+    float: right;
+    margin: 1%;
+}
+
+.Rakel section #kommode {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 1%;
+}
+
+.Rakel section .skjorte {
+    position: relative;
+    width: 40%;
+    float: right;
+    margin: 1%;
+}
+
+/*'Hvad og Hvem' slutter, inspiration starter*/
+
+#insp {
+    text-align: center;
+    width: 100%;
+    padding: 3%;
+    font-size: 180%;
+}
+
+.getthelookflex {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+#getthelook1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#getthelook1 img {
+    width: 45%;
+}
+
+#getthelook1 section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #7aa3bd;
+    width: 45%;
+    font-size: 100%;
+    background-color: #c5d6e2;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 100%;
+}
+
+#getthelook1 section p {
+    text-align: center;
+    color: #c5d6e2;
+    background-color: #7aa3bd;
+    width: 9%;
+    border-radius: 100%;
+    margin: 1%;
+    font-size: 250%
+}
+
+#getthelook2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 2%;
+}
+
+#getthelook2 img {
+    width: 45%;
+    padding-top: 0%;
+}
+
+#getthelook2 section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #7aa3bd;
+    width: 45%;
+    font-size: 100%;
+    background-color: #c5d6e2;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 100%;
+}
+
+#getthelook2 section p {
+    text-align: center;
+    color: #c5d6e2;
+    background-color: #7aa3bd;
+    width: 9%;
+    border-radius: 100%;
+    margin: 1%;
+    font-size: 250%
+}
+
+/*'Inspiration' slutter, 'Tips og Tricks' starter*/
+
+#tipsimg {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#tipsimg img {
+    width: 31%;
+    height: 31%;
+}
+
+.Tips {
+    /*background-color: #c5d6e2;*/
+    /*opacity: 0.5;*/
+    width: 93%;
+
+    margin: auto;
+    padding-top: 2%;
+}
+
+.Tips h1 {
+    position: relative;
+    /*background-color: #c5d6e2;*/
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+}
+
+
+.flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Alt som KUN er til større skærme*/
+@media (min-width:960px) {
+
+    .raad {
+        width: 50%;
+        padding: 2%;
+    }
+}
+
+.raad h1 {
+    width: 100%;
+}
+
+footer {
+    background-color: #ffbf49;
+    background-image: linear-gradient(#fdf9ee, #ffbf49);
+    width: 100%;
+    margin: 0%;
+}
+
+.flexfooter {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Alt som KUN er til større skærme*/
+@media (min-width:960px) {
+
+    .emner {
+        width: 33%;
+        padding: 2%;
+    }
+}
+
+/*Main*/
+
+/* example to be deleted*/
+/*p{
+font-family: Tahoma, Geneva, sans-serif;  
+}*/
+
+
+/*when you develop mobile first responsive pages, you add rules for different device sizes after all the global rules, starting with the smallest screen size*/
